@@ -1,0 +1,64 @@
+/* Evité les débordrement et mise a 0 des marges  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* fond de la page + police d'écriture + taille du fond */
+body {
+    color: white;
+    background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(43,43,43),rgb(43,43,43));
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+}
+
+/* Taille du texte du header */
+header{
+    font-size: 2rem;
+    display: flex;
+}
+
+/* Mettre les éléments du header et du form au milieux */
+header{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form, form input{
+    font-size: 2.5rem;
+    border: none;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+select {
+    -webkit-appearance: none; /* Correctif de typo */
+    -moz-appearance: none; /* Correctif de typo */
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    background: black;
+    color: white;
+    width: 4rem;
+    cursor: pointer;
+    height: 2.5rem;
+    text-align: center; /* Centre le texte horizontalement */
+    font-size: 2rem;
+}
+
+.results {
+    font-size: 2.5rem;
+    border: none;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
