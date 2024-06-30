@@ -16,8 +16,7 @@ function calcule(e) {
 
   // Récupération de l'opération sélectionnée dans le select
   var operation = operationSelect.value;
-
-  // Switch sur l'opération sélectionnée
+  
   switch (operation) {
     case "plus":
       result = un + deux;
@@ -36,6 +35,5 @@ function calcule(e) {
   }
 
   // Affichage du résultat dans l'élément resultat
-  console.log(result); // Vérifiez le résultat dans la console
   document.getElementById("resultats").innerText = result;
 }
