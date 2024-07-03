@@ -4,9 +4,11 @@ Ceci est un petit projet qui n'est pas là pour être joli, mais pour faire des 
 
 
 ## Futur Ajout et Changement
-Calcule de Puissance
-Remplacement de la function eval par la function math.evaluation
-Refonte graphique avec pavé numérique 
+1. **Calcule de Puissance**
+2. **Remplacement de la function eval par la function math.evaluation**
+3. **Refonte graphique avec pavé numérique**
 
 ## Utilisation 
-Pour l'utiliser, c'est simple : il suffit d'entrer des valeurs à droite et à gauche et de choisir ce que l'on veut au milieu, et par la suite d'appuyer sur le bouton = à droite pour que le résultat s'affiche en dessous.
+1. **Choisissez le type de calcule au millieu**
+2. **Entré une valeur a droite et une valeur a gauche**
+3. **Cliqué sur le bouton "=" pour effectué le calcule**
