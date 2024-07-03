@@ -4,9 +4,9 @@ Ceci est un petit projet qui n'est pas là pour être joli, mais pour faire des 
 
 
 ## Futur Ajout et Changement
-1. **Calcule de Puissance**
-2. **Remplacement de la function eval par la function math.evaluation**
-3. **Refonte graphique avec pavé numérique**
+1. **Calcule de Puissance et Racine Carré**
+2. **Refonte total du javascript pour utilisé math.evaluation au lieu d'un switch**
+3. **Refonte graphique avec ajout d'un pavé numérique**
 
 ## Utilisation 
 1. **Choisissez le type de calcule au millieu**
