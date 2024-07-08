@@ -1,14 +1,9 @@
 # Calculatrice-Simple
 
-Ceci est un petit projet qui n'est pas là pour être joli, mais pour faire des calculs simples comme l'addition, la soustraction, la multiplication et la division.
-
-
-## Futur Ajout et Changement
-1. **Calcule de Puissance et Racine Carré**
-2. **Refonte total du javascript pour utilisé math.evaluation au lieu d'un switch**
-3. **Refonte graphique avec ajout d'un pavé numérique**
+Ceci est un petit projet qui n'est pas là pour être joli, mais pour faire des calculs simples comme l'addition, la soustraction, la multiplication, la division, la puissance et la racine carré.
 
 ## Utilisation 
-1. **Choisissez le type de calcule au millieu**
-2. **Entré une valeur a droite et une valeur a gauche**
+1. **Entrez une valeur**
+2. **Cliquer sur le bouton correspondant au calcule que vous voulez faire**
 3. **Cliqué sur le bouton "=" pour effectué le calcule**
+4. **Pour la racine carré il faut l'entré avant d'entré le nombre dont vous voulez voir la racine carré**
