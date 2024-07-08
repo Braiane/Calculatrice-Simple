@@ -1,39 +1,30 @@
-const premier = document.querySelector(".first");
-const deuxieme = document.querySelector(".second");
-const calculer = document.querySelector(".resultat");
-const operationSelect = document.getElementById("operation");
+const info = document.querySelector(".calculatrices");
+const afficheur = document.querySelector("#afficheur");
+const boutons = document.querySelectorAll('input[type="button"]');
 
-// Écouteur d'événement sur le bouton résultat
-calculer.addEventListener("click", calcule);
-
-function calcule(e) {
-  e.preventDefault();
-
-  // Récupération des valeurs des champs input
-  var un = parseFloat(premier.value);
-  var deux = parseFloat(deuxieme.value);
-  var result;
-
-  // Récupération de l'opération sélectionnée dans le select
-  var operation = operationSelect.value;
-  
-  switch (operation) {
-    case "plus":
-      result = un + deux;
-      break;
-    case "moins":
-      result = un - deux;
-      break;
-    case "fois":
-      result = un * deux;
-      break;
-    case "diviser":
-      result = un / deux;
-      break;
-    default:
-      result = "Opération invalide";
-  }
-
-  // Affichage du résultat dans l'élément resultat
-  document.getElementById("resultats").innerText = result;
+function val(resultat){
+    afficheur.value = afficheur.value + resultat;
 }
+
+    function calcule(){
+    if (afficheur.value == "") {
+        info.innerHTML = "Entrez un calcul";
+    } else {
+        try {
+
+            let expression = afficheur.value.replace(/√/g, 'sqrt(');
+            
+            // Compter le nombre de parenthèses ouvrantes et fermantes
+            let openParentheses = (expression.match(/\(/g) || []).length;
+            let closeParentheses = (expression.match(/\)/g) || []).length;
+
+            for (let i = 0; i < openParentheses - closeParentheses; i++) {
+                expression += ')';
+            }
+            info.innerHTML = "";
+            afficheur.value = math.evaluate(expression);     
+        } catch (error) {
+            info.innerHTML = `Erreur: ${error.message}`;
+        }
+    }
+    }
