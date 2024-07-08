@@ -14,23 +14,50 @@
       integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
       crossorigin="anonymous"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.0/math.min.js"></script>
     <title>Calculatrice</title>
   </head>
   <body>
-    <header><h1>Calculatrice Simple</h1></header>
-    <form>
-      <input type="number" class="first">
-      <select name="operation" id="operation">
-        <option value="plus">+</option>
-        <option value="moins">-</option>
-        <option value="fois">x</option>
-        <option value="diviser">/</option>
-      </select>
-      <input type="number" class="second">
-      <button class="resultat">=</button>
-    </form>
-    <div class="results" id="resultats"></div>
-    
+    <div class="calculatrice">
+      <p class="calculatrices">
+        <form name="form">
+          <div class="resultat">
+            <input type="text" id="afficheur" name="afficheur">
+          </div>
+          <div class="bouton">
+            <div class="row">
+              <input type="reset" id="del" value="C" name="reset" onclick="suppr()">
+              <input type="button" value="/" name="diviser" onclick="val(diviser.value)">
+              <input type="button" value="^" name="puissance" onclick="val(puissance.value)">
+              <input type="button" value="√" name="racine" onclick="val(racine.value)">
+            </div>
+            <div class="row">
+              <input type="button" value="7" name="v7" onclick="val(v7.value)">
+              <input type="button" value="8" name="v8" onclick="val(v8.value)">
+              <input type="button" value="9" name="v9" onclick="val(v9.value)">
+              <input type="button" value="+" name="plus" onclick="val(plus.value)">
+            </div>
+            <div class="row">
+              <input type="button" value="4" name="v4" onclick="val(v4.value)">
+              <input type="button" value="5" name="v5" onclick="val(v5.value)">
+              <input type="button" value="6" name="v6" onclick="val(v6.value)">
+              <input type="button" value="-" name="moins" onclick="val(moins.value)">
+            </div>
+            <div class="row">
+              <input type="button" value="1" name="v1" onclick="val(v1.value)">
+              <input type="button" value="2" name="v2" onclick="val(v2.value)">
+              <input type="button" value="3" name="v3" onclick="val(v3.value)">
+              <input type="button" value="*" name="fois" onclick="val(fois.value)">
+            </div>
+            <div class="row">
+              <input type="button" value="0" name="v0" onclick="val(v0.value)">
+              <input type="button" value="." name="dot" onclick="val(dot.value)">
+              <input type="button" class="egale" value="=" name="egale" onclick="calcule()">
+            </div>
+          </div>
+        </form>
+      </p> 
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
